@@ -1,4 +1,4 @@
-FROM registry.harbor:5000/docker.io/java:8u40-jre
+FROM https://github.com/yarntime/docker-java-helloworld.git
 COPY * /opt/app/
 WORKDIR /opt/app
 CMD ["java", "HelloWorldApp"]
